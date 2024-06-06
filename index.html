@@ -100,8 +100,8 @@
     </div>
 
       <!-- send Quote Modal -->
-      <div class="modal" id="sendQuoteModal" tabindex="-1">
-          <div class="modal-dialog">
+      <div class="modal" id="sendQuoteModal" style="z-index: 2000 !important;" tabindex="-1">
+          <div class="modal-dialog  modal-sm">
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title">Request Quotation</h5>
@@ -114,13 +114,13 @@
                         <input type="text" id="qFName" class="form-control" required >
                     </div>
                     <div class="mt-3">
-                        <label>Email Address</label>
-                        <input type="email" id="qEmail" class="form-control" required>
+                        <label>Email / Phone</label>
+                        <input type="text" id="qEmail" class="form-control" required>
                     </div>
-                    <div class="mt-3">
+                    <!-- <div class="mt-3">
                         <label>Phone Number</label>
                         <input type="tel" id="qPhone" class="form-control" required>
-                    </div>
+                    </div> -->
                     <div class="mt-3">
                         <label>What service do you want</label>
                         <input type="text" id="qService" class="form-control" required>
@@ -145,17 +145,21 @@
 
     <main class="containa y proximity-scroll-snapping" dir="ltr">
         <section class="row align-items-center section1">
-            <div class="col-md-12 text-center">
+            <div class="col-md-12 text-start">
                 <div class="content-holder-1 mx-3 p-4">
-                    <h1 class="display-1 fw-bold text-blue">Technology & Design</h1>
-                    <p class="fs-3 mt-4 text-light">
-                        We are designers and developers
-                        of Software, Websites,  Mobile apps, Branding & Printing services 
-                        to help businesses archive their goals.
-                    </p>
-                    <div class="mt-3">
-                        <a class="btn btn-primary" href="services.html">Explore</a>
-                        <a class="btn bg-red reqQt" href="">Request Quotation</a>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h1 class="display-1 fw-bold text-blue">Technology & Design</h1>
+                            <p class="fs-2 mt-4 text-white">
+                                We are designers and developers
+                                of Software, Websites,  Mobile apps, Branding & Printing services 
+                                to help businesses archive their goals.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mt-3 row">
+                        <a class="col-md-2 m-1 m-lg-3 btn btn-dark text-white" href="services.html">Explore</a>
+                        <a class="col-md-2 m-1 m-lg-3 btn bg-white text-dark reqQt" href="">Request Quotation</a>
                     </div>
                     
                     <svg class="explore-down " viewBox="0 0 320 512" width="20" title="angle-down">
@@ -167,17 +171,16 @@
 
         <!-- who we are -->
         <section class="section-padding who-we-are row align-items-center text-white">
-            <div class="col-xs-12 col-md-6 mt-5">
-                <h2 class="display-2 fw-bold">Who We Are</h2>
-            </div>
-            <div class="col-xs-12 col-md-6 text-start">
-                <p style="background-color: rgb(100, 100, 100, 0.9); padding: 6%;">
-                    Bytebase Technologies has over 10 years of experience developing and maintaining custom software development solutions, Websites, Mobile Apps, Branding and Printing for enterprises worldwide. 
-                We work as an end-to-end provider of software development solutions and we work with you from initial ideas to going live. 
-                We approach everything with a test-heavy approach and we make use of third-party auditors 
-                per everyone’s needs to ensure we comply with security and code standards. We specialize in all modern-day technology languages and 
-                have specialist teams in each of the languages we deploy.
-                </p> 
+            <div class="row text-start">
+                <div class="col-lg-6"></div>
+                <div class="m-3 m-lg-0 col-lg-6" style="background-color: rgb(100, 100, 100, 0.9); padding: 6%;">
+                    <h2 class="display-2 fw-bold">Who We Are</h2>
+                    <p class="mt-4">
+                        Bytebase Technologies has over 10 years of experience developing and maintaining custom software development solutions, Websites, Mobile Apps, Branding and Printing for enterprises worldwide. 
+                        We work as an end-to-end provider of software development solutions...
+                    </p>
+                    <a class="btn bg-white text-dark" href="about.html">Read More</a>
+                </div>
             </div>
         </section>
 

@@ -190,10 +190,10 @@ footer a:hover{
   }
 
 .section1{
-  background-image: url("../img/website-homepage-responsive-design-ideas-concept1.jpg"), url("../img/giphy.gif");
+  background-image: url("../img/sect1-bg.jpg");
   background-size: cover;
   background-color: #3b3b3b;
-  background-position: center;
+  background-position: left;
 }
 
 html{
