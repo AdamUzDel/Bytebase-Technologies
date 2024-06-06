@@ -1,0 +1,399 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+/* hide scrollbar */
+::-webkit-scrollbar{
+  display: none;
+}
+.containa {
+  display: flex;
+  overflow: auto;
+  flex: none;
+  width: 100%;
+  height: 100vh;
+  flex-flow: column nowrap;
+  scroll-snap-type: y mandatory;
+}
+
+.containa > .row {
+  text-align: center;
+  scroll-snap-align: center;
+  flex: none;
+  width: 100%;
+  height: 100%;
+}
+
+.containa > div:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.containa > div:nth-child(odd) {
+  background-color: #c5c5c5;
+}
+
+/* drop down btn */
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+/********************* main nav ************************/
+.btb-nav-bar{
+    color: aliceblue !important;
+    width: 100%;
+    position: absolute;
+    background-color: rgb(255, 255, 255, .9) !important;
+}
+.btb-nav-bar .btb-nav-lg a{
+    text-decoration: none !important;
+}
+
+/* ************ responsive nav **********************/
+.hamb-container {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  z-index: 1337;
+  display: none;
+}
+
+.hamb {
+  position: relative;
+  width: 30px;
+  height: 2px;
+  background: #d70664;
+  top: 45%;
+  transition: all .2s ease-in-out;
+  transform: translateY(-50%);
+}
+
+.hamb:before,
+.hamb:after {
+  position: absolute;
+  content: '';
+  width: 30px;
+  height: 2px;
+  transition: all .3s ease-in-out;
+  background: #d70664;
+}
+
+.hamb:before {
+  top: -10px;
+}
+
+.hamb:after {
+  top: 10px;
+}
+
+.hamb-container:hover .hamb {
+  width: 20px;
+}
+
+.hamb-container:hover .hamb:after {
+  width: 10px;
+}
+
+.hamb-container.open .hamb {
+  background: transparent;
+}
+
+.hamb-container.open .hamb:before {
+  transform: rotate(-45deg);
+  top: 0;
+  width: 20px;
+}
+
+.hamb-container.open .hamb:after {
+  transform: rotate(45deg);
+  top: 0;
+  width: 20px;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  transition: all .3s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  transform: translateX(100%);
+  z-index: 1336;
+  display: none;
+}
+
+.slide {
+  transform: translateY(0);
+}
+
+.btb-nav-sm{
+  list-style: none;
+}
+
+.btb-nav-sm a{
+  text-decoration: none;
+}
+
+/* footer */
+footer{
+    /* font-family: Oswald; */
+    display: block;
+}
+
+footer a{
+  color: #B39965 !important;
+}
+
+footer a:hover{
+  color: #012969 !important;
+}
+
+/*  */
+/* When the screen is less than 600 pixels wide, hide the menu items. Show the humberger icon that should open and close the topnav (.icon) */
+  @media screen and (max-width: 600px) {
+      .btb-nav-lg {display: none;}
+      .hamb-container {display: block;}
+      .menu {display: block;}
+      .btb-logo-sm img{
+          width: 150px !important;
+      }
+      .btb-nav-smedia a i{
+        font-size: 1.3rem !important;
+      }
+  }
+
+.section1{
+  background-image: url("../img/website-homepage-responsive-design-ideas-concept1.jpg"), url("../img/giphy.gif");
+  background-size: cover;
+  background-color: #3b3b3b;
+  background-position: center;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.section-padding{
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.text-blue{
+  color: #012969 !important;
+}
+.text-red{
+  color: #d70664 !important;
+}
+
+.bg-blue{
+  background-color: #012969 !important;
+  color: aliceblue !important;
+}
+
+.bg-red{
+  background-color: #d70664 !important;
+  color: aliceblue !important;
+}
+
+.bg-red:hover{
+  background-color: #930244 !important;
+  transition: .5s;
+  color: aliceblue !important;
+}
+
+button {
+ padding: 10px;
+ border-radius: 25px;
+ border: none;
+ background: #3b3b3b;
+ color: white;
+ font-weight: 15px;
+ font-size: 15px;
+ width: 240px;
+ height: 38px;
+ letter-spacing: 1.5px;
+ text-align: center;
+ position: absolute;
+ top: 87%;
+ left: 40%;
+ transform: translate(-40%, -90%);
+ cursor: pointer;
+}
+
+.explore-down {
+ position: absolute;
+ top: 100%;
+ left: 51%;
+ transform: translate(-50%, -100%);
+ animation: bounce 0.5s infinite;
+}
+
+@keyframes bounce {
+ from {
+ position: absolute;
+ top: 99%;
+ left: 51%;
+ transform: translate(-50%, -100%);
+ }
+ to {
+  position: absolute;
+ top: 100%;
+ left: 51%;
+ transform: translate(-50%, -100%);
+ }
+}
+@media (max-width: 450px) {
+  img {
+    width: 60px;
+   }
+   button {
+   position: absolute;
+   top: 80%;
+   left: 40%;
+   transform: translate(-40%, -80%);
+   }
+   .b2 {
+   position: absolute;
+   top: 87%;
+   left: 40%;
+   transform: translate(-40%, -87%);
+   }
+  }
+  @media (max-width: 970px) {
+   ul li {
+    display: block;
+   }
+  }
+  
+  @media (max-width: 1319px) {
+   button {
+    width: 200px;
+    height: 40px;
+    font-size: 13px;
+   }
+   .b2 {
+    width: 200px;
+    height: 40px;
+    font-size: 13px;
+   }
+  }
+  
+  @media (max-width: 1149px) {
+   button {
+    width: 200px;
+    height: 40px;
+    font-size: 13px;
+   }
+   .b2 {
+    width: 200px;
+    height: 40px;
+    font-size: 13px;
+   }
+  }
+  
+  
+  @media (max-width: 1101px) {
+   button {
+    width: 190px;
+    font-size: 11px;
+    height: 35px;
+   }
+   .b2 {
+    width: 190px;
+    font-size: 11px;
+    height: 35px;
+   }
+  }
+  
+  @media (max-width: 1058px) {
+   button {
+    width: 180px;
+    font-size: 7px;
+    height: 35px;
+   }
+   .b2 {
+    width: 180px;
+    font-size: 7px;
+    height: 35px;
+   }
+  }
+  
+  @media (max-width: 1057px) {
+   button {
+    font-size: 10px;
+   }
+   .b2 {
+    font-size: 10px;
+   }
+  }
+  
+  
+  @media (max-width: 1005px) {
+   button {
+    width: 170px;
+   }
+   .b2 {
+    width: 170px;
+   }
+  }
+  @media (max-width: 939px) {
+   button {
+   position: absolute;
+   top: 80%;
+   left: 50%;
+   transform: translate(-50%, -80%);
+   }
+   .b2 {
+   position: absolute;
+   top: 87%;
+   left: 50%;
+   transform: translate(-50%, -87%);
+   }
+  }
+  
+  @media (max-width: 1163px) {
+   .ul .li {
+    font-size: 13px;
+    margin: 7px;
+   }
+  }
+
+  /* have an idea section */
+  .have-an-idea{
+    /*  */
+    background-color: #F4F2F4;
+  }
+  .idea-left{
+    background-color: #F4F2F4;
+    color: black;
+  }
+  .idea-right{
+    color: #012969;
+  }

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bytebase Technologies - software and branding company in Uganda">
+    <meta name="theme-color" content="rgba(2, 116, 246, .6)">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="rgba(2, 116, 246, .6)">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="rgba(2, 116, 246, .6)">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Bytebase Technologies - Website Design, Mobile App & Custom Software Development, Branding">
+    <link rel="icon" sizes="192x192" href="img/bytebase-logo-only.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/bytebase-logo-only.png">
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">    <!-- fontawesome icons -->
+    <!-- font awesome icons -->
+    <script src="https://kit.fontawesome.com/e1d9cf067a.js" crossorigin="anonymous"></script>
+    <!-- montserat font -->
+    <!-- google fonts Dongle, IBM Plex, Montserrat, Roboto - tesla -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@700&family=IBM+Plex+Sans+Thai+Looped:wght@300&family=Montserrat:wght@500;600&family=Roboto&display=swap" rel="stylesheet">
+    <!-- my styles -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Website Design, Mobile App & Custom Software Development, Branding - Bytebase Technologies Home</title>
+</head>
+<body>
+
+      <!-- header -->
+    <header class="btb-nav-bar py-3">
+        <div class="container-fluid">
+          <!-- main nav -->
+            <div class="d-flex bd-highlight">
+                <a class="flex-fill bd-highlight d-block d-md-none btb-logo-sm" href="index.html">
+                        <img src="img/bytebase-logo.png" alt="bytebase logo">
+                </a>
+                <a class="flex-fill bd-highlight d-none d-md-block d-lg-block btb-logo-lg" href="index.html"><img class="img-fluid" src="img/bytebase-logo.png" alt="bytebase logo" width="150px"></a>
+                <div class="flex-fill bd-highlight btb-nav-lg fs-5 align-items-bottom">
+                    <a class="ms-2 link-dark border-bottom border-4 border-danger" href="index.html">Home</a>
+                    <div class="dropdown">
+                        <a class="ms-4 link-dark dropdown-btn" href="services.html">Our Services <i class="ms-1 bi bi-caret-down-fill"></i></a>
+                        <div class="dropdown-content">
+                            <a class="link-dark" href="webdesign.html">Web Design</a>
+                            <a class="link-dark" href="appdev.html">Mobile Apps</a>
+                            <a class="link-dark" href="cusomtsoftware.html">Custom software</a>
+                        </div>
+                    </div>
+                    <a class="ms-4 link-dark" href="about.html">About Us</a>
+                    <a class="ms-4 link-dark" href="contact.html">Contact</a>
+                </div>
+                <div class="flex-fill bd-highlight btb-nav-smedia">
+                    <a class="ms-2 link-dark" href="#"><i class="fa-brands fa-facebook-f fs-5"></i></a>
+                    <a class="ms-3 link-dark" href="https://www.twitter.com/BytebaseTech"><i class="bi bi-twitter-x fs-5"></i></a>
+                    <a class="ms-3 link-dark" href="https://wa.me/+256764286149"><i class="fa-brands fa-whatsapp fs-5"></i></a>
+                </div>
+                
+
+                <!-- mobile nav honeycomb -->
+                <div class="flex-fill bd-highlight hamb-container">
+                    <div class="hamb"></div>
+                </div>
+            </div>
+            <!-- mobile menu -->
+            <div class="menu bg-dark">
+                <ul class="btb-nav-sm fs-4">
+                    <li class="mt-5 pb-2 border-bottom border-1 border-light"><a class="ms-2 link-light w-100 active" href="index.html">Home</a></li>
+                    <li class="mt-3 pb-2 border-bottom border-1 border-light"><a class="ms-2 link-light" href="services.html">Our Services</a></li>
+                    <li class="mt-3 pb-2 border-bottom border-1 border-light"><a class="ms-2 link-light" href="about.html">About Us</a></li>
+                    <li class="mt-3 pb-2 border-bottom border-1 border-light"><a class="ms-2 link-light" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+      </header><!-- close header -->  
+
+
+    <!-- send whatsapp Modal -->
+    <div class="modal" id="sendWhatsappModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Send a message on whatsApp</h5>
+              <a type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></a>
+            </div>
+            <div class="modal-body">
+              <p>WhatsApp Number: +256-773-915667</p>
+            </div>
+            <div class="modal-footer">
+              <a type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</a>
+            </div>
+          </div>
+        </div>
+    </div>
+
+      <!-- send Quote Modal -->
+      <div class="modal" id="sendQuoteModal" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Request Quotation</h5>
+                <a type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></a>
+              </div>
+              <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" id="qFName" class="form-control" required >
+                    </div>
+                    <div class="mt-3">
+                        <label>Email Address</label>
+                        <input type="email" id="qEmail" class="form-control" required>
+                    </div>
+                    <div class="mt-3">
+                        <label>Phone Number</label>
+                        <input type="tel" id="qPhone" class="form-control" required>
+                    </div>
+                    <div class="mt-3">
+                        <label>What service do you want</label>
+                        <input type="text" id="qService" class="form-control" required>
+                    </div>
+                    <div class="mt-3">
+                        <label>Project Budget</label>
+                        <input type="text" id="qBudget" class="form-control" required>
+                    </div>
+                    <div class="mt-3">
+                        <label>Project Details</label>
+                        <input type="text" id="qDetails" class="form-control" required>
+                    </div>
+                    <a type="submit" id="submitQ" class="btn btn-dark mt-3">Submit</a>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <a type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <main class="containa y proximity-scroll-snapping" dir="ltr">
+        <section class="row align-items-center section1">
+            <div class="col-md-12 text-center">
+                <div class="content-holder-1 mx-3 p-4">
+                    <h1 class="display-1 fw-bold text-blue">Technology & Design</h1>
+                    <p class="fs-3 mt-4 text-light">
+                        We are designers and developers
+                        of Software, Websites,  Mobile apps, Branding & Printing services 
+                        to help businesses archive their goals.
+                    </p>
+                    <div class="mt-3">
+                        <a class="btn btn-primary" href="services.html">Explore</a>
+                        <a class="btn bg-red reqQt" href="">Request Quotation</a>
+                    </div>
+                    
+                    <svg class="explore-down " viewBox="0 0 320 512" width="20" title="angle-down">
+                        <path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- who we are -->
+        <section class="section-padding who-we-are row align-items-center text-white">
+            <div class="col-xs-12 col-md-6 mt-5">
+                <h2 class="display-2 fw-bold">Who We Are</h2>
+            </div>
+            <div class="col-xs-12 col-md-6 text-start">
+                <p style="background-color: rgb(100, 100, 100, 0.9); padding: 6%;">
+                    Bytebase Technologies has over 10 years of experience developing and maintaining custom software development solutions, Websites, Mobile Apps, Branding and Printing for enterprises worldwide. 
+                We work as an end-to-end provider of software development solutions and we work with you from initial ideas to going live. 
+                We approach everything with a test-heavy approach and we make use of third-party auditors 
+                per everyone’s needs to ensure we comply with security and code standards. We specialize in all modern-day technology languages and 
+                have specialist teams in each of the languages we deploy.
+                </p> 
+            </div>
+        </section>
+
+        <!-- have an idea -->
+        <section class="have-an-idea row align-items-center text-white">
+            <div class="col-md-6 idea-left mt-3 text-start m-0 p-5">
+                <div class="">
+                    <h2 class="display-2 fw-bold">
+                        <div class="fs-3 fw-light">HAVE AN IDEA?</div>
+                        <div class="fs-1 fw-bold">WE CAN HELP YOU BUILD IT.</div>
+                        <div class="border border-bottom border-danger border-4 w-50 mb-3 mt-2"></div>
+                    </h2>
+                    <p>
+                        Whether you're looking for a simple checklist tool or a complicated addition 
+                        to your CRM, we've got you covered. Through our services we give you efficient, 
+                        flexible and reliable access to your data wherever you are. We'll empower you 
+                        to create experiences that matter to you and your users.
+                    </p>
+                    <a class="btn btn-dark text-white" href="services.html">See Our Services</a>
+                </div>
+            </div>
+            <div class="col-md-6 idea-right m-0 p-0">
+                <img src="img/flyer.png" alt="" class="ideam-img w-100">
+            </div>
+        </section>
+
+        <!-- why us -->
+        <section class="section-why-us section-padding row align-items-center">
+            <div class="col-md-12 text-center">
+                <h2 class="display-2">Why Us</h2>
+                <p class="p-text fs-4 mx-5">
+                    Bytebase unleashes the power of IT to transform your business with digital IT workflows. 
+                    Let us modernize your operations to optimize productivity, cost, and resilience.
+                </p>
+                <div class="row">
+                    <div class="mt-4 col-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div style="margin-top: -30px;" class="fs-5">
+                                    <span style="border-radius: 50%;"  class="p-2 text-white bg-danger">
+                                        <i class="bi-bullseye"></i>
+                                    </span>
+                                </div>
+                                <h3 class="mt-2 fs-6">We offer industry-best skills at competitive rates.</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4 col-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div style="margin-top: -30px;" class="fs-5">
+                                    <span style="border-radius: 50%;"  class="p-2 text-white bg-danger">
+                                        <i class="bi-bullseye"></i>
+                                    </span>
+                                </div>
+                                <h3 class="mt-2 fs-6">With us there are no hidden costs.</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4 col-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div style="margin-top: -30px;" class="fs-5">
+                                    <span style="border-radius: 50%;"  class="p-2 text-white bg-danger">
+                                        <i class="bi-bullseye"></i>
+                                    </span>
+                                </div>
+                                <h3 class="mt-2 fs-6">We communicate with you every step of the way.</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4 col-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div style="margin-top: -30px;" class="fs-5">
+                                    <span style="border-radius: 50%;"  class="p-2 text-white bg-danger">
+                                        <i class="bi-bullseye"></i>
+                                    </span>
+                                </div>
+                                <h3 class="mt-2 fs-6">We are focused on scalability & efficiency.</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <a class="btn btn-secondary" href="services.html">Explore</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- footer -->
+        <section class="footer row align-items-center bg-dark text-light" 
+        style="background-image: url('img/bg_lg_footer2.png');
+               background-repeat: no-repeat;
+               background-size: cover;">
+                <div class="row text-start">
+                    <div class="col-md-4 text-center">                
+                        <a class="btb-logo-sm mt-5" href="index.html">
+                                <img class="w-100"src="img/bytebase-logo.png" alt="bytebase logo">
+                        </a>
+                        <div class="mt-3 text-center">
+                            <div class="fw-bold">Proudly based in Uganda, East Africa. </div>
+                            <div class="mt-2"><i class="fa-brands fa-whatsapp fs-5 me-2"></i> +256-773-915667</div> 
+                            <div class="mt-2">
+                                <span >
+                                    <i class="fas fa-phone fs-5 me-2"></i> 
+                                </span>
+                                    0764-286149 / 0756-373817 / 0780-246664
+                            </div> 
+                            <div class="mt-2"><i class="fas fa-envelope fs-5 me-2"></i> inquiries@bytebasetech.com</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-3 px-3 text-center">                
+                        <div class="fs-3 text-uppercase fw-bold">Useful Links</div>
+                        <div class="mt-2">
+                            <style>
+                                .footer ul li{
+                                    list-style: none;
+                                }
+                                .footer ul a{
+                                    text-decoration: none;
+                                    color: white;
+                                }
+                            </style>
+                            <ul>
+                                <li><a href="contact.html"><i class="fa fa-arrow-circle-right me-2" aria-hidden="true"></i>Contact Us</a></li>
+                                <li><a href="about.html"><i class="fa fa-arrow-circle-right me-2" aria-hidden="true"></i>About Us</a></li>
+                                <li><a href="careers.html"><i class="fa fa-arrow-circle-right me-2" aria-hidden="true"></i>Careers</a></li>
+                                <li><a href="use-policy.html"><i class="fa fa-arrow-circle-right me-2" aria-hidden="true"></i>Acceptable Use Policy</a></li>
+                                <li><a href="tos.html"><i class="fa fa-arrow-circle-right me-2" aria-hidden="true"></i>Terms of Service</a></li>
+                                <li><a href="privacy-policy.html"><i class="fa fa-arrow-circle-right me-2" aria-hidden="true"></i>Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-3 px-3 text-center">                
+                        <div class="fs-3 text-uppercase fw-bold">Our Location</div>
+                        <div class="mt-2">
+                            <p>
+                                First Floor, Room J-406 Nasser 
+                                Business Center Building, Nasser Rd, 
+                                Kampala - Uganda
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- custom script -->
+    <script src="js/index.js"></script>
+</body>
+</html>

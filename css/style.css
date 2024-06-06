@@ -1,0 +1,214 @@
+/* Exo font import from fonts.google.com */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: 'Exo 2', sans-serif;
+}
+
+.who-we-are{
+    background-image: url("../img/black-employee.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+    /* index.html */
+    .p-text {
+      font-size: .9rem !important;
+    }
+
+    /* services page */
+    .p-service{
+      font-size: 0.5rem;
+      width: 100% !important;
+    }
+    .main-services .p-service-web{
+      font-size: 0.8rem;
+      width: 100% !important;
+    }
+    .main-services section h2{
+      font-size: 1rem;
+    }
+    .main-services section .card-body, .main-services section .card{
+     background-color: rgba(255, 255, 255, 0.65) !important;
+     margin: 0 5%;
+    }
+    .main-services section p, .card-link{
+      font-size: .8rem;
+    }
+    .ideam-img{
+      width: auto;
+      height: 150px;
+    }
+    .adv-txt{
+      font-size: .6rem;
+    }
+    .rght-txt{
+      font-size: .8rem;
+    }
+    .text-web{
+     font-size: 1.3rem !important;
+    }
+    .web-icon{
+      width: 30% !important;
+    }
+
+    /* web design page */
+    .web-intro{
+      width: 100% !important;
+      text-align: center !important;
+    }
+    .sec-bg{
+      background-image: url("../img/web-design.jpg");
+      background-size: cover;
+      background-position: left bottom;
+      color: white !important;
+    }
+    
+    .what-we-offer-txt{
+      width: 100% !important;
+      padding: 0;
+      margin: 0;
+    }
+    .carousel-view {
+    gap: 5px !important;
+    }
+    .carousel-view .item-list {
+    max-width: 100%;
+    width: 80vw !important ;
+    gap: 10px !important;
+    }
+    .item {
+    min-width: 70% !important;
+    width: 70% !important;
+    min-height: 40%;
+    border-radius:10px;
+    padding: 5px 5px 0 5px !important;
+    }
+    .item h3{
+      font-size: 1rem;
+    }
+    .item p{
+      font-size: .8rem;
+    }
+    .we-serve-intro{
+      width: 100% !important;
+    }
+  }
+  
+/* services page */
+.main-services button {
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: none;
+  background: #3b3b3b;
+  color: white;
+  font-weight: 15px;
+  font-size: 15px;
+  width: auto;
+  height: auto;
+  letter-spacing: .5px;
+  text-align: center;
+  cursor: pointer;
+ }
+ .service-sect-1{
+  background-image: url('../img/IT-team-bg.png');
+ }
+ .sect-web{
+  background-image: url('../img/web-design-concept.jpg');
+  background-size: cover;
+ }
+ .sect-graphics{
+  background-image: url('../img/colourful_birds_exploding.png');
+  background-size: cover;
+ }
+ .sect-software{
+  background-image: url('../img/software-engineering.jpg');
+  background-size: cover;
+ }
+ .sect-arch-plans{
+  background-image: url('../img/arc-building-plan.jpg');
+  background-size: cover;
+ }
+ .text-web{
+  background: linear-gradient(to right, red, blue); 
+  -webkit-text-fill-color: transparent; 
+  -webkit-background-clip: text; 
+ }
+ .main-services section .card-body, .main-services section .card{
+  background-color: rgba(255, 255, 255, 0.65) !important;
+  margin: 0 10%;
+ }
+
+/* web design page */
+.what-we-offer-sect{
+  background-color: #F4F2F4;
+}
+.what-we-offer-txt{
+  padding: 0 20%;
+}
+.prev-btn, .next-btn{
+  border: none;
+  cursor: pointer;
+  color: white;
+  background: none;
+  transition: all .3s ease-in-out;
+  margin: 0;
+  padding: 0;
+}
+.holder {
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0;
+padding: 0;
+}
+
+.carousel-view {
+display: flex;
+justify-content: space-between;
+margin: 0;
+padding: 0;
+align-items: center;
+gap: 10px !important;
+transition: all 0.25s ease-in;
+}
+
+.carousel-view .item-list {
+max-width: 100%;
+width: 70vw;
+padding: 50px 10px;
+display: flex;
+gap: 48px;
+scroll-behavior: smooth;
+transition: all 0.25s ease-in;
+-ms-overflow-style: none; /* IE and Edge */
+scrollbar-width: none; /* Firefox */
+overflow: auto;
+scroll-snap-type: x mandatory;
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.item-list::-webkit-scrollbar {
+display: none;
+}
+
+.prev-btn {
+/* background = none; */
+cursor: pointer;
+}
+
+.next-btn {
+cursor: pointer;
+}
+
+.item {
+scroll-snap-align: center;
+min-width: 40%;
+height: 100%;
+box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.18);
+border-radius:8px;
+background-color: white;
+}
