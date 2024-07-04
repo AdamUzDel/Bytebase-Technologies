@@ -6,6 +6,10 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --primary-color:#12477a;
+  --secondary-color:#59d8fd;
+  --primary-color-rgb:#11487A;
+  --secondary-color-rgb:#67CDF2;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,6 +20,22 @@
   }
 }
 
+.color-primary{
+  color: var(--primary-color-rgb);
+}
+
+.color-secondary{
+  color: (var(--secondary-color-rgb));
+}
+
+.bg-primary{
+  background-color: var(--primary-color-rgb);
+}
+
+.bg-secondary{
+  background-color: (var(--secondary-color-rgb));
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -24,6 +44,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    
 }
 
 @layer utilities {
