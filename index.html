@@ -26,9 +26,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@700&family=IBM+Plex+Sans+Thai+Looped:wght@300&family=Montserrat:wght@500;600&family=Roboto&display=swap" rel="stylesheet">
+
     <!-- my styles -->
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- swipper CSS -->
+    <link rel="stylesheet" href="css/swipper.css" />
+
     <title>Website Design, Mobile App & Custom Software Development, Branding - Bytebase Technologies Home</title>
 </head>
 <body>
@@ -39,7 +47,7 @@
           <!-- main nav -->
             <div class="d-flex bd-highlight">
                 <a class="flex-fill bd-highlight d-block d-md-none btb-logo-sm" href="index.html">
-                        <img src="img/bytebase-logo.png" alt="bytebase logo">
+                        <img src="./img/bytebase-logo.png" alt="bytebase logo">
                 </a>
                 <a class="flex-fill bd-highlight d-none d-md-block d-lg-block btb-logo-lg" href="index.html"><img class="img-fluid" src="img/bytebase-logo.png" alt="bytebase logo" width="150px"></a>
                 <div class="flex-fill bd-highlight btb-nav-lg fs-5 align-items-bottom">
@@ -143,22 +151,22 @@
           </div>
         </div>
 
-    <main class="containa y proximity-scroll-snapping" dir="ltr">
+    <main class="" dir="ltr">
+        <!-- intro section -->
         <section class="row align-items-center section1">
             <div class="col-md-12 text-start">
                 <div class="content-holder-1 mx-3 p-4">
                     <div class="row">
                         <div class="col-lg-6">
-                            <h1 class="display-1 fw-bold text-blue">Technology & Design</h1>
-                            <p class="fs-2 mt-4 text-white">
-                                We are designers and developers
-                                of Software, Websites,  Mobile apps, Branding & Printing services 
-                                to help businesses archive their goals.
+                            <h1 class="fs-2 text-blue">Technology & Design</h1>
+                            <p class="display-5 fw-bold text-uppercase mt-4 text-white">
+                                Our company mission is to lead the
+                                <span class="text-red bg-white" id="elem"></span>.
                             </p>
                         </div>
                     </div>
                     <div class="mt-3 row">
-                        <a class="col-md-2 m-1 m-lg-3 btn btn-dark text-white" href="services.html">Explore</a>
+                        <a class="col-md-2 m-1 m-lg-3 btn btn-dark text-white" href="#sect-services">Explore</a>
                         <a class="col-md-2 m-1 m-lg-3 btn bg-white text-dark reqQt" href="">Request Quotation</a>
                     </div>
                     
@@ -176,8 +184,12 @@
                 <div class="m-3 m-lg-0 col-lg-6" style="background-color: rgb(100, 100, 100, 0.9); padding: 6%;">
                     <h2 class="display-2 fw-bold">Who We Are</h2>
                     <p class="mt-4">
-                        Bytebase Technologies has over 10 years of experience developing and maintaining custom software development solutions, Websites, Mobile Apps, Branding and Printing for enterprises worldwide. 
-                        We work as an end-to-end provider of software development solutions...
+                        Bytebase Technologies has over 10 years of experience developing and maintaining 
+                        custom software development solutions, Websites, Mobile Apps, Branding and Printing 
+                        for enterprises worldwide. 
+                        To empower businesses to achieve their digital goals. We believe that the digital 
+                        realm offers boundless opportunities for growth and connection, and we're here to 
+                        guide you through this transformative journey.
                     </p>
                     <a class="btn bg-white text-dark" href="about.html">Read More</a>
                 </div>
@@ -194,12 +206,12 @@
                         <div class="border border-bottom border-danger border-4 w-50 mb-3 mt-2"></div>
                     </h2>
                     <p>
-                        Whether you're looking for a simple checklist tool or a complicated addition 
-                        to your CRM, we've got you covered. Through our services we give you efficient, 
-                        flexible and reliable access to your data wherever you are. We'll empower you 
-                        to create experiences that matter to you and your users.
+                      At Bytebase, we're not just in the business of digital solutions; we're in the business 
+                      of crafting digital success stories. Founded on a passion for innovation and a commitment 
+                      to excellence, we've been at the forefront of the digital landscape, helping businesses 
+                      like yours thrive in the digital age.
                     </p>
-                    <a class="btn btn-dark text-white" href="services.html">See Our Services</a>
+                    <a class="btn btn-dark text-white" href="#sect-services">See Our Services</a>
                 </div>
             </div>
             <div class="col-md-6 idea-right m-0 p-0">
@@ -207,69 +219,410 @@
             </div>
         </section>
 
-        <!-- why us -->
-        <section class="section-why-us section-padding row align-items-center">
-            <div class="col-md-12 text-center">
-                <h2 class="display-2">Why Us</h2>
-                <p class="p-text fs-4 mx-5">
-                    Bytebase unleashes the power of IT to transform your business with digital IT workflows. 
-                    Let us modernize your operations to optimize productivity, cost, and resilience.
-                </p>
-                <div class="row">
-                    <div class="mt-4 col-6">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <div style="margin-top: -30px;" class="fs-5">
-                                    <span style="border-radius: 50%;"  class="p-2 text-white bg-danger">
-                                        <i class="bi-bullseye"></i>
-                                    </span>
-                                </div>
-                                <h3 class="mt-2 fs-6">We offer industry-best skills at competitive rates.</h3>
+        <!-- our services -->
+         <section id="sect-services" class="section-padding py-5 align-items-center">
+            <h2 class="display-2 fw-bold text-center">We specialize in the following services</h2>
+            <p class="p-service text-center w-50 mx-auto" style="font-size: 1rem; font-style: italic;">
+                We use our creative imaginations across print, web and other expertese to energise a 
+                company’s marketing, build a better brand and generate real world results.
+            </p>
+            <div class="border border-bottom border-danger border-4 text-start w-25 mx-auto mb-3 mt-2"></div>
+        </section>
+
+        <!-- services -->
+         <section class="section-padding row py-6 align-items-center">
+            <div class="row align-items-center">
+                <!-- web design -->
+                <div class="col-lg-3 mb-3 h-100">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/funny.jpg">
+                        <div class="position-relative overflow-hidden" style="height:50px;margin-top:-50px;">
+                        <div class="position-absolute w-100 top-0 z-index-1">
+                            <svg class="waves waves-sm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 40" preserveAspectRatio="none" shape-rendering="auto">
+                                <defs>
+                                <path id="card-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+                                </defs>
+                                <g class="moving-waves">
+                                <use xlink:href="#card-wave" x="48" y="-1" fill="rgba(255,255,255,0.30"></use>
+                                <use xlink:href="#card-wave" x="48" y="3" fill="rgba(255,255,255,0.35)"></use>
+                                <use xlink:href="#card-wave" x="48" y="5" fill="rgba(255,255,255,0.25)"></use>
+                                <use xlink:href="#card-wave" x="48" y="8" fill="rgba(255,255,255,0.20)"></use>
+                                <use xlink:href="#card-wave" x="48" y="13" fill="rgba(255,255,255,0.15)"></use>
+                                <use xlink:href="#card-wave" x="48" y="16" fill="rgba(255,255,255,0.99)"></use>
+                                </g>
+                            </svg>
                             </div>
                         </div>
-                    </div>
-                    <div class="mt-4 col-6">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <div style="margin-top: -30px;" class="fs-5">
-                                    <span style="border-radius: 50%;"  class="p-2 text-white bg-danger">
-                                        <i class="bi-bullseye"></i>
-                                    </span>
-                                </div>
-                                <h3 class="mt-2 fs-6">With us there are no hidden costs.</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mt-4 col-6">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <div style="margin-top: -30px;" class="fs-5">
-                                    <span style="border-radius: 50%;"  class="p-2 text-white bg-danger">
-                                        <i class="bi-bullseye"></i>
-                                    </span>
-                                </div>
-                                <h3 class="mt-2 fs-6">We communicate with you every step of the way.</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mt-4 col-6">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <div style="margin-top: -30px;" class="fs-5">
-                                    <span style="border-radius: 50%;"  class="p-2 text-white bg-danger">
-                                        <i class="bi-bullseye"></i>
-                                    </span>
-                                </div>
-                                <h3 class="mt-2 fs-6">We are focused on scalability & efficiency.</h3>
-                            </div>
+                        <div class="card-body">
+                            <h4>
+                                Web Design Solutions
+                            </h4>
+                            <p class="fs-6">
+                                Easy to use, search engine friendly, flexible website development platforms with unlimited functionality to grow as your business grows. We provide custom user-friendly content management systems (CMS), that allow you to easily make changes on the fly..
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="mt-3">
-                    <a class="btn btn-secondary" href="services.html">Explore</a>
+                <!-- graphic design -->
+                <div class="col-lg-3 mb-3 h-100">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="img/colourful_birds_exploding.png">
+                        <div class="position-relative overflow-hidden" style="height:50px;margin-top:-50px;">
+                        <div class="position-absolute w-100 top-0 z-index-1">
+                            <svg class="waves waves-sm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 40" preserveAspectRatio="none" shape-rendering="auto">
+                                <defs>
+                                <path id="card-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+                                </defs>
+                                <g class="moving-waves">
+                                <use xlink:href="#card-wave" x="48" y="-1" fill="rgba(255,255,255,0.30"></use>
+                                <use xlink:href="#card-wave" x="48" y="3" fill="rgba(255,255,255,0.35)"></use>
+                                <use xlink:href="#card-wave" x="48" y="5" fill="rgba(255,255,255,0.25)"></use>
+                                <use xlink:href="#card-wave" x="48" y="8" fill="rgba(255,255,255,0.20)"></use>
+                                <use xlink:href="#card-wave" x="48" y="13" fill="rgba(255,255,255,0.15)"></use>
+                                <use xlink:href="#card-wave" x="48" y="16" fill="rgba(255,255,255,0.99)"></use>
+                                </g>
+                            </svg>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4>
+                                Graphic Design, Branding &amp; Printing Solutions
+                            </h4>
+                            <p class="fs-6">
+                                Design is the foundation of everything we do, and we’re flexible and responsive to your design needs so that our creative work is effective whatever the medium or target market.. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- custom software and apps -->
+                <div class="col-lg-3 mb-3 h-100">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="img/software-engineering.jpg">
+                        <div class="position-relative overflow-hidden" style="height:50px;margin-top:-50px;">
+                        <div class="position-absolute w-100 top-0 z-index-1">
+                            <svg class="waves waves-sm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 40" preserveAspectRatio="none" shape-rendering="auto">
+                                <defs>
+                                <path id="card-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+                                </defs>
+                                <g class="moving-waves">
+                                <use xlink:href="#card-wave" x="48" y="-1" fill="rgba(255,255,255,0.30"></use>
+                                <use xlink:href="#card-wave" x="48" y="3" fill="rgba(255,255,255,0.35)"></use>
+                                <use xlink:href="#card-wave" x="48" y="5" fill="rgba(255,255,255,0.25)"></use>
+                                <use xlink:href="#card-wave" x="48" y="8" fill="rgba(255,255,255,0.20)"></use>
+                                <use xlink:href="#card-wave" x="48" y="13" fill="rgba(255,255,255,0.15)"></use>
+                                <use xlink:href="#card-wave" x="48" y="16" fill="rgba(255,255,255,0.99)"></use>
+                                </g>
+                            </svg>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4>
+                                Custom Software & Mobile App Development Solutions
+                            </h4>
+                            <p class="fs-6">
+                                As an integrated team of specialists, we provide strategy, architecture, design, security and development for cutting edge software & mobile applications...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- architecture -->
+                <div class="col-lg-3 mb-3 h-100">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="img/arc-building-plan.jpg">
+                        <div class="position-relative overflow-hidden" style="height:50px;margin-top:-50px;">
+                        <div class="position-absolute w-100 top-0 z-index-1">
+                            <svg class="waves waves-sm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 40" preserveAspectRatio="none" shape-rendering="auto">
+                                <defs>
+                                <path id="card-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+                                </defs>
+                                <g class="moving-waves">
+                                <use xlink:href="#card-wave" x="48" y="-1" fill="rgba(255,255,255,0.30"></use>
+                                <use xlink:href="#card-wave" x="48" y="3" fill="rgba(255,255,255,0.35)"></use>
+                                <use xlink:href="#card-wave" x="48" y="5" fill="rgba(255,255,255,0.25)"></use>
+                                <use xlink:href="#card-wave" x="48" y="8" fill="rgba(255,255,255,0.20)"></use>
+                                <use xlink:href="#card-wave" x="48" y="13" fill="rgba(255,255,255,0.15)"></use>
+                                <use xlink:href="#card-wave" x="48" y="16" fill="rgba(255,255,255,0.99)"></use>
+                                </g>
+                            </svg>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4>
+                                Architectural & Structural Building Plans
+                            </h4>
+                            <p class="fs-6">
+                                When producing plans for developments, architects need to consider the functionality and structural integrity of their plan, and also the aesthetics and the integration with surroundings...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                  <a class="btn btn-dark text-white" href="services.html">See All Services <i class="fas fa-arrow-right text-xs ms-1"></i></a>
+                </div>
+            </div>
+         </section>
+
+         <!-- Current Projects Section -->
+         <section class="section-padding py-5 mt-5" id="current-projects">
+           <h2 class="display-2 fw-bold text-center">Our Current Projects</h2>
+ 
+           <!-- Filter Buttons -->
+            <div class="filter-container">
+              <div class="d-flex flex-wrap justify-content-center" role="group" aria-label="Filter projects">
+                <input type="radio" class="btn-check" name="filter" id="filter-all" autocomplete="off" data-filter="all" checked />
+                <label class="btn btn-outline-primary me-2 mb-2" for="filter-all">All</label>
+
+                <input type="radio" class="btn-check" name="filter" id="filter-app-web" autocomplete="off" data-filter="app-web" />
+                <label class="btn btn-outline-primary me-2 mb-2" for="filter-app-web">App/Web Development</label>
+
+                <input type="radio" class="btn-check" name="filter" id="filter-brand-identity" autocomplete="off" data-filter="brand-identity" />
+                <label class="btn btn-outline-primary me-2 mb-2" for="filter-brand-identity">Brand Identity</label>
+
+                <input type="radio" class="btn-check" name="filter" id="filter-graphic-design" autocomplete="off" data-filter="graphic-design" />
+                <label class="btn btn-outline-primary me-2 mb-2" for="filter-graphic-design">Graphic Design</label>
+
+                <input type="radio" class="btn-check" name="filter" id="filter-social-media" autocomplete="off" data-filter="social-media" />
+                <label class="btn btn-outline-primary me-2 mb-2" for="filter-social-media">Social Media Graphics</label>
+
+                <input type="radio" class="btn-check" name="filter" id="filter-motion-graphics" autocomplete="off" data-filter="motion-graphics" />
+                <label class="btn btn-outline-primary me-2 mb-2" for="filter-motion-graphics">Motion Graphics</label>
+              </div>
+            </div>
+ 
+           <div class="swiper mySwiper">
+            <div class="swiper-wrapper mb-4">
+              <!-- Project Slide Example -->
+              <div class="swiper-slide" data-category="app-web" data-slide-index="0">
+                <div class="project-card">
+                  <img src="img/creative-team-at-work.jpg" class="swiper-lazy" alt="Project 1" />
+                  <div class="project-info">
+                    <h3>Ask Rhona Website</h3>
+                    <p>Brief description highlighting key features.</p>
+                    <a href="#" class="project-link">Learn More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide" data-category="app-web" data-slide-index="0">
+                <div class="project-card">
+                  <img src="img/creative-team-at-work.jpg" class="swiper-lazy" alt="Project 1" />
+                  <div class="project-info">
+                    <h3>Kambo Autos web App</h3>
+                    <p>Brief description highlighting key features.</p>
+                    <a href="projects/projects.html#project-kambo-autos" class="project-link">Learn More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide" data-category="graphic-design" data-slide-index="0">
+                <div class="project-card">
+                  <img src="img/creative-team-at-work.jpg" class="swiper-lazy" alt="Project 1" />
+                  <div class="project-info">
+                    <h3>Blessed 2 Bless</h3>
+                    <p>Brief description highlighting key features.</p>
+                    <a href="#" class="project-link">Learn More</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Repeat slides, assigning appropriate data-category -->
+            </div>
+            <!-- Swiper Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Swiper Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+         </section>
+
+        <!-- contact us -->
+        <section class="row bg-light align-items-center mt-4">
+            <div class="col-12 ">
+                <div class="py-7 position-relative">
+                    <div class="page-header min-vh-50 m-3 border-radius-xl" style="background-image: url('img/curved8.jpg');">
+                      <span class="mask bg-gradient-dark opacity-4"></span>
+                      <div class="container">
+                        <div class="row justify-content-center">
+                          <div class="col-lg-6 text-center mx-auto">
+                            <h2 class="text-white mt-3 mb-1">Got a question?</h2>
+                            <p class="lead text-white mb-6">We&#39;d like to talk more about what you need</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="container">
+                      <div class="row mt-n7 blur border-radius-lg shadow-blur">
+                        <div class="col-lg-3 col-md-6 col-12 position-relative my-auto">
+                          <div class="p-3 text-center">
+                            <div>
+                              <span class="bg-gradient-primary shadow text-center w-auto p-2 text-white" style="border-radius: 50%;">
+                                <i class="bi-map"></i>
+                              </span>
+                            </div>
+                            <h5 class="mt-3 mb-1">Address</h5>
+                            <p class="mb-0">Rm J-406, Level2 - Nasser Business Center Building, Kampala</p>
+                            <hr class="vertical dark">
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 position-relative my-auto">
+                          <div class="p-3 text-center">
+                            <div>
+                              <span class="bg-gradient-primary shadow text-center w-auto p-2 text-white" style="border-radius: 50%;">
+                                <i class="bi-envelope-at"></i>
+                              </span>
+                            </div>
+                            <h5 class="mt-3 mb-1">Email</h5>
+                            <p class="mb-0">inquiries@bytebasetech.com</p>
+                          </div>
+                          <hr class="vertical dark">
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 position-relative my-auto">
+                          <div class="p-3 text-center">
+                            <div>
+                              <span class="bg-gradient-primary shadow text-center w-auto p-2 text-white" style="border-radius: 50%;">
+                                <i class="bi-phone"></i>
+                              </span>
+                            </div>
+                            <h5 class="mt-3 mb-1">Phone</h5>
+                            <p class="mb-0">+256 764 286149 <br> +256 756 373817</p>
+                          </div>
+                          <hr class="vertical dark">
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 position-relative my-auto">
+                          <div class="p-3 text-center">
+                            <div>
+                              <span class="bg-gradient-primary shadow text-center w-auto p-2 text-white" style="border-radius: 50%;">
+                                <i class="bi-person"></i>
+                              </span>
+                            </div>
+                            <h5 class="mt-3 mb-1">Contact</h5>
+                            <p class="mb-0">Adam / Stanley</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <!-- why us -->
+        <section class="section-why-us align-items-center my-5 bg-gradient-primary position-relative overflow-hidden">
+            <img src="img/waves-white.svg" alt="pattern-lines" class="position-absolute opacity-6">
+            <div class="position-absolute w-100 z-inde-1 top-0 mt-n3">
+              <svg width="100%" viewBox="0 -2 1920 157" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <title>wave-down</title>
+                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g fill="#FFFFFF" fill-rule="nonzero">
+                          <g id="wave-down">
+                              <path d="M0,60.8320331 C299.333333,115.127115 618.333333,111.165365 959,47.8320321 C1299.66667,-15.5013009 1620.66667,-15.2062179 1920,47.8320331 L1920,156.389409 L0,156.389409 L0,60.8320331 Z" id="Path-Copy-2" transform="translate(960.000000, 78.416017) rotate(180.000000) translate(-960.000000, -78.416017) "></path>
+                          </g>
+                      </g>
+                  </g>
+              </svg>
+            </div>
+            <div class="container pt-6 pb-7">
+              <div class="row align-items-center">
+                <div class="col-lg-4 my-5 align-items-center">
+                  <div class="card mb-lg-5">
+                    <img class="card-img-top" src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/mic-check.jpg">
+                    <div class="position-relative overflow-hidden" style="height:50px;margin-top:-50px;">
+                      <div class="position-absolute w-100 top-0 z-index-1">
+                          <svg class="waves waves-sm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 40" preserveAspectRatio="none" shape-rendering="auto">
+                            <defs>
+                              <path id="card-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+                            </defs>
+                            <g class="moving-waves">
+                              <use xlink:href="#card-wave" x="48" y="-1" fill="rgba(255,255,255,0.30"></use>
+                              <use xlink:href="#card-wave" x="48" y="3" fill="rgba(255,255,255,0.35)"></use>
+                              <use xlink:href="#card-wave" x="48" y="5" fill="rgba(255,255,255,0.25)"></use>
+                              <use xlink:href="#card-wave" x="48" y="8" fill="rgba(255,255,255,0.20)"></use>
+                              <use xlink:href="#card-wave" x="48" y="13" fill="rgba(255,255,255,0.15)"></use>
+                              <use xlink:href="#card-wave" x="48" y="16" fill="rgba(255,255,255,0.99)"></use>
+                            </g>
+                          </svg>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                      <h2 class="display-2 fw-bold">
+                        Why Us
+                      </h2>
+                      <p>
+                        Bytebase unleashes the power of IT to transform your business with digital IT workflows. Let us modernize your operations to optimize productivity, cost, and resilience.
+                      </p>
+                      <a href="javascript:;" class="text-primary icon-move-right">See Our Strategy
+                        <i class="fas fa-arrow-right text-xs ms-1"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 mb-3">
+                  <div class="row justify-content-start">
+                    <div class="col-md-6">
+                      <div class="info">
+                        <div class="icon icon-md">
+                        <svg width="25px" height="25px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <title>spaceship</title>
+                          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g transform="translate(-1720.000000, -592.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                              <g transform="translate(1716.000000, 291.000000)">
+                                <g transform="translate(4.000000, 301.000000)">
+                                  <path d="M39.3,0.706666667 C38.9660984,0.370464027 38.5048767,0.192278529 38.0316667,0.216666667 C14.6516667,1.43666667 6.015,22.2633333 5.93166667,22.4733333 C5.68236407,23.0926189 5.82664679,23.8009159 6.29833333,24.2733333 L15.7266667,33.7016667 C16.2013871,34.1756798 16.9140329,34.3188658 17.535,34.065 C17.7433333,33.98 38.4583333,25.2466667 39.7816667,1.97666667 C39.8087196,1.50414529 39.6335979,1.04240574 39.3,0.706666667 Z M25.69,19.0233333 C24.7367525,19.9768687 23.3029475,20.2622391 22.0572426,19.7463614 C20.8115377,19.2304837 19.9992882,18.0149658 19.9992882,16.6666667 C19.9992882,15.3183676 20.8115377,14.1028496 22.0572426,13.5869719 C23.3029475,13.0710943 24.7367525,13.3564646 25.69,14.31 C26.9912731,15.6116662 26.9912731,17.7216672 25.69,19.0233333 L25.69,19.0233333 Z"></path>
+                                  <path d="M1.855,31.4066667 C3.05106558,30.2024182 4.79973884,29.7296005 6.43969145,30.1670277 C8.07964407,30.6044549 9.36054508,31.8853559 9.7979723,33.5253085 C10.2353995,35.1652612 9.76258177,36.9139344 8.55833333,38.11 C6.70666667,39.9616667 0,40 0,40 C0,40 0,33.2566667 1.855,31.4066667 Z"></path>
+                                  <path d="M17.2616667,3.90166667 C12.4943643,3.07192755 7.62174065,4.61673894 4.20333333,8.04166667 C3.31200265,8.94126033 2.53706177,9.94913142 1.89666667,11.0416667 C1.5109569,11.6966059 1.61721591,12.5295394 2.155,13.0666667 L5.47,16.3833333 C8.55036617,11.4946947 12.5559074,7.25476565 17.2616667,3.90166667 L17.2616667,3.90166667 Z" opacity="0.598539807"></path>
+                                  <path d="M36.0983333,22.7383333 C36.9280725,27.5056357 35.3832611,32.3782594 31.9583333,35.7966667 C31.0587397,36.6879974 30.0508686,37.4629382 28.9583333,38.1033333 C28.3033941,38.4890431 27.4704606,38.3827841 26.9333333,37.845 L23.6166667,34.53 C28.5053053,31.4496338 32.7452344,27.4440926 36.0983333,22.7383333 L36.0983333,22.7383333 Z" id="color-3" opacity="0.598539807"></path>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </div>
+                        <h5 class="text-white mt-3">Industry-best skills</h5>
+                        <p class="text-white opacity-8">We offer industry-best skills at competitive rates with the highest level of client satisfaction.</p>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="info">
+                        <div class="icon icon-md text-white">
+                          <i class="fs-1 bi-eyeglasses"></i>
+                        </div>
+                        <h5 class="text-white mt-3">No hidden costs</h5>
+                        <p class="text-white opacity-8">With us there are no hidden costs, we deliver as promised. We always keep our word to our customers and we fully are trustworthy.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row justify-content-start">
+                    <div class="col-md-6">
+                      <div class="info">
+                        <div class="icon icon-md text-white">
+                          <i class="fs-1 bi-chat-dots-fill"></i>
+                        </div>
+                        <h5 class="text-white mt-3">Communication with Client</h5>
+                        <p class="text-white opacity-8">We communicate with you every step of the way. Thanks to our team of certified technology specialists with more than 100 years of combined experience.</p>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="info">
+                        <div class="icon icon-md text-white">
+                          <i class="fs-1 bi-bar-chart-steps"></i>
+                        </div>
+                        <h5 class="text-white mt-3">scalability & efficiency</h5>
+                        <p class="text-white opacity-8">We are focused on scalability & efficiency. This makes us Uganda’s leading creative company, providing the highest level of customer satisfaction in Uganda.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="position-absolute w-100 bottom-0">
+              <svg width="100%" viewBox="0 -1 1920 166" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <title>wave-up</title>
+                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g transform="translate(0.000000, 5.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                          <g id="wave-up" transform="translate(0.000000, -5.000000)">
+                              <path d="M0,70 C298.666667,105.333333 618.666667,95 960,39 C1301.33333,-17 1621.33333,-11.3333333 1920,56 L1920,165 L0,165 L0,70 Z"></path>
+                          </g>
+                      </g>
+                  </g>
+              </svg>
+            </div>
+          </section>
         
         <!-- footer -->
         <section class="footer row align-items-center bg-dark text-light" 
@@ -288,7 +641,7 @@
                                 <span >
                                     <i class="fas fa-phone fs-5 me-2"></i> 
                                 </span>
-                                    0764-286149 / 0756-373817 / 0780-246664
+                                0764-286149 | 0756-373817 | 0780-246664
                             </div> 
                             <div class="mt-2"><i class="fas fa-envelope fs-5 me-2"></i> inquiries@bytebasetech.com</div>
                         </div>
@@ -335,6 +688,27 @@
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- custom script -->
-    <script src="js/index.js"></script>
+    <script src="./js/index.js"></script>
+    <!-- typed js for animated text -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- swipper JS -->
+    <script src="js/swipper.js"></script>
+
+    <script>
+        var typed = new Typed('#elem', {
+          strings: ['Web Design',  'Web Development',  'Software Development', 'App Development', 'Graphic Design', 'Branding &amp; Printing services'],
+          typeSpeed: 140,
+          smartBackspace: true,
+          loop: true,
+        });
+    </script>
+    <!-- anime js -->
+     <script src="js/anime.min.js"></script>
+    <!-- firebase -->
+     <script type="module" src="src/firebase_init.js"></script>
 </body>
 </html>

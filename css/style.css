@@ -9,9 +9,11 @@ body{
     background-image: url("../img/who-we-are-pic.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
 }
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     /* index.html */
     .p-text {
       font-size: .9rem !important;
@@ -94,6 +96,10 @@ body{
     .we-serve-intro{
       width: 100% !important;
     }
+    .footer{
+      padding-left: 1rem;
+      padding-right: 1rem;
+     }
   }
   
 /* services page */
@@ -129,6 +135,13 @@ body{
  .sect-arch-plans{
   background-image: url('../img/arc-building-plan.jpg');
   background-size: cover;
+ }
+ .section-why-us, .footer{
+  padding: 3rem;
+  width: 100%;
+ }
+ .footer{
+  min-height: 100vh;
  }
  .text-web{
   background: linear-gradient(to right, red, blue); 

@@ -1,0 +1,38 @@
+.my-quote{
+    margin-top: -2rem !important;
+}
+
+.teams-col{
+    margin-top: -12rem !important;
+    margin-bottom: 1rem;
+}
+
+.h-60px {
+    height: 60px !important;
+}
+
+.stretched-link::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    content: "";
+  }
+
+  .text-primary{
+    color: #d70664 !important;
+  }
+  
+
+/*  */
+/* When the screen is less than 600 pixels wide, hide the menu items. Show the humberger icon that should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+    .my-quote{
+        margin-top: -4rem !important;
+    }
+    .teams-col{
+        margin-top: 1rem !important;
+    }
+}

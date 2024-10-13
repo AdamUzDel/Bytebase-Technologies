@@ -6,6 +6,9 @@ body{
 ::-webkit-scrollbar{
   display: none;
 }
+header{
+  z-index: 200;
+}
 .containa {
   display: flex;
   overflow: auto;
@@ -161,20 +164,6 @@ body{
   text-decoration: none;
 }
 
-/* footer */
-footer{
-    /* font-family: Oswald; */
-    display: block;
-}
-
-footer a{
-  color: #B39965 !important;
-}
-
-footer a:hover{
-  color: #012969 !important;
-}
-
 /*  */
 /* When the screen is less than 600 pixels wide, hide the menu items. Show the humberger icon that should open and close the topnav (.icon) */
   @media screen and (max-width: 600px) {
@@ -190,10 +179,13 @@ footer a:hover{
   }
 
 .section1{
-  background-image: url("../img/sect1-bg.jpg");
+  background-image: linear-gradient(to left, rgba(237, 237, 237, 0.15), rgba(5, 5, 5, 0.4)), 
+                    url("../img/sect1-bg.jpg");
   background-size: cover;
   background-color: #3b3b3b;
   background-position: left;
+  width: 100%;
+  height: 100vh;
 }
 
 html{

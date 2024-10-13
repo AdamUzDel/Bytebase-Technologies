@@ -24,7 +24,7 @@ $('.reqQt').on("click", (e) => {
 });
 
 // custom carousel
-const prev = document.getElementById('prev-btn')
+/* const prev = document.getElementById('prev-btn')
 const next = document.getElementById('next-btn')
 const list = document.getElementById('item-list')
 
@@ -37,4 +37,4 @@ prev.addEventListener('click',()=>{
 
 next.addEventListener('click',()=>{
   list.scrollLeft += itemWidth + padding
-})
+}) */
