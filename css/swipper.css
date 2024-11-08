@@ -44,7 +44,7 @@
   .project-info h3 {
     font-size: 1.8rem;
     margin-bottom: 10px;
-    color: #007BFF;
+    color: #ff0080 !important;
   }
   
   .project-info p {
@@ -56,7 +56,7 @@
   .project-link {
     display: inline-block;
     padding: 12px 24px;
-    background-color: #007BFF;
+    background-color: #000000 !important;
     color: #fff;
     border-radius: 6px;
     text-decoration: none;
@@ -64,17 +64,18 @@
   }
   
   .project-link:hover {
-    background-color: #0056b3;
+    background-color: #ffffff;
+    color: black !important;
   }
   
   /* Swiper Navigation */
   .swiper-button-next,
   .swiper-button-prev {
-    color: #007BFF;
+    color: black !important;
   }
   
   .swiper-pagination-bullet-active {
-    background-color: #007BFF;
+    background-color: #000000 !important;
   }
   
   /* Responsive Styles */
@@ -106,7 +107,7 @@
   
   .filter-btn.active,
   .filter-btn:hover {
-    background-color: #007BFF;
+    background-color: #000000 !important;
     color: #fff;
   }
 
